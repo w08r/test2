@@ -1,0 +1,9 @@
+name: Update Requirements
+on: [workflow_dispatch]
+jobs:
+  Action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone test 1
+        run: |
+          git clone git@github.com:w08r/test1.git
