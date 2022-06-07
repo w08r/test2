@@ -5,5 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone test 1
-        run: |
-          git clone git@github.com:w08r/test1.git
+        uses: actions/checkout@v2
+        with:
+          repository: w08r/test1
+          path: test1
+          ref: main
+      # - name: clone test 1
+      #   run: |
+      #     git clone git@github.com:w08r/test1.git
